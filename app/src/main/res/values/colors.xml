@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#0056FF</color>
+    <color name="orange">#FF5722</color>
+    <color name="green">#35BF0D</color>
+    <color name="brown">#FF572626</color>
+    <color name="grey">#9F9D9D</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0303</color>
+    <color name="black">#FF000000</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="violet">#FFBB86FC</color>
+    <color name="rose">#F1A9E8</color>
+    <color name="cian">#1FFFFF</color>
+    <color name="background">#AFE7FF</color>
+
+</resources>

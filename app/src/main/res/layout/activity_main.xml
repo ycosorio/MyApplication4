@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:ems="10"
+        android:text="@string/titleActivity1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/tvCtaBuscada"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCtaBuscada"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:text="@string/ctaBuscada"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/ctaBuscada"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/ctaBuscada"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#76D3CA"
+        android:ems="10"
+        android:hint="@string/hintCta"
+        android:inputType="number"
+        android:shadowColor="#000000"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/tvCtaInicio"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCtaBuscada"
+        tools:ignore="Autofill" />
+
+
+    <TextView
+        android:id="@+id/tvCtaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:text="@string/ctaInicial"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/ctaInicio"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctaBuscada" />
+
+    <EditText
+        android:id="@+id/ctaInicio"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#74DFD5"
+        android:ems="10"
+        android:hint="@string/hintCta"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:nextFocusDown="@id/tamanoCable"
+        app:layout_constraintBottom_toTopOf="@id/tvTamanoCable"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCtaInicio"
+        tools:ignore="Autofill" />
+
+
+    <TextView
+        android:id="@+id/tvTamanoCable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:text="@string/tamano"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/tamanoCable"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctaInicio" />
+
+    <EditText
+        android:id="@+id/tamanoCable"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#78D6CD"
+        android:ems="10"
+        android:hint="@string/hintFibra"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/texto_contador"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTamanoCable"
+        tools:ignore="Autofill" />
+    <TextView
+        android:id="@+id/texto_contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnResultado"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tamanoCable"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="resultado"
+        android:text="@string/buttonCalcular"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_contador" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

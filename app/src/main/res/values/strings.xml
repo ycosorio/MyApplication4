@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculadora de fibra</string>
+    <string name="titleActivity2">Resultado</string>
+    <string name="ctaBuscada">Cuenta buscada</string>
+    <string name="ctaInicial">Primera cuenta del cable</string>
+    <string name="hintCta">Ingrese N° cuenta</string>
+    <string name="hintFibra">Ingrese cantidad de fibras</string>
+    <string name="tamano">Tamaño del cable (fibras)</string>
+    <string name="titleActivity1">Buscar el color de la fibra</string>
+    <string name="buttonCalcular">Calcular</string>
+
+
+</resources>
