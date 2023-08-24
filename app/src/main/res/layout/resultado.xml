@@ -14,7 +14,7 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/titleActivity2"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/text"
         android:layout_marginTop="50dp"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -27,12 +27,13 @@
 
     <TextView
         android:id="@+id/tvResultadoFibra"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="75dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
         android:textSize="15sp"
+        android:background="@drawable/borde_redondo"
         app:layout_constraintBottom_toTopOf="@id/tvResultadoBuffer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -41,13 +42,13 @@
 
     <TextView
         android:id="@+id/tvResultadoBuffer"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="75dp"
         android:layout_marginTop="20dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="15sp"
-
+        android:background="@drawable/borde_redondo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResultadoFibra" />

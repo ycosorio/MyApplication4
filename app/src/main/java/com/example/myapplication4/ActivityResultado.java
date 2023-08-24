@@ -1,9 +1,6 @@
 package com.example.myapplication4;
 
-
 import android.content.Intent;
-
-import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,95 +27,58 @@ public class ActivityResultado extends AppCompatActivity {
             bufferColor = bufferColor.substring(0,bufferColor.indexOf(" "));
         }
 
-        switch (fiberColor){
-            case "Azul":
-                resultadoFibra.setBackgroundColor(getColor(R.color.blue));
-                resultadoFibra.setTextColor(getColor(R.color.white));
-                break;
-            case "Naranja":
-                resultadoFibra.setBackgroundColor(getColor(R.color.orange));
-                break;
-            case "Verde":
-                resultadoFibra.setBackgroundColor(getColor(R.color.green));
-                resultadoFibra.setTextColor(getColor(R.color.white));
-                break;
-            case "Café":
-                resultadoFibra.setBackgroundColor(getColor(R.color.brown));
-                resultadoFibra.setTextColor(getColor(R.color.white));
-                break;
-            case "Gris":
-                resultadoFibra.setBackgroundColor(getColor(R.color.grey));
-                break;
-            case "Blanco":
-                resultadoFibra.setBackgroundColor(getColor(R.color.white));
-                break;
-            case "Rojo":
-                resultadoFibra.setBackgroundColor(getColor(R.color.red));
-                break;
-            case "Negro":
-                resultadoFibra.setBackgroundColor(getColor(R.color.black));
-                resultadoFibra.setTextColor(getColor(R.color.white));
-                break;
-            case "Amarillo":
-                resultadoFibra.setBackgroundColor(getColor(R.color.yellow));
-                break;
-            case "Violeta":
-                resultadoFibra.setBackgroundColor(getColor(R.color.violet));
-                break;
-            case "Rosado":
-                resultadoFibra.setBackgroundColor(getColor(R.color.rose));
-                break;
-            case "Celeste":
-                resultadoFibra.setBackgroundColor(getColor(R.color.cian));
-                break;
-        }
-        switch (bufferColor){
-            case "Azul":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.blue));
-                resultadoBuffer.setTextColor(getColor(R.color.white));
-                break;
-            case "Naranja":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.orange));
-                break;
-            case "Verde":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.green));
-                resultadoBuffer.setTextColor(getColor(R.color.white));
-                break;
-            case "Café":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.brown));
-                resultadoBuffer.setTextColor(getColor(R.color.white));
-                break;
-            case "Gris":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.grey));
-                break;
-            case "Blanco":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.white));
-                break;
-            case "Rojo":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.red));
-                break;
-            case "Negro":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.black));
-                resultadoBuffer.setTextColor(getColor(R.color.white));
-                break;
-            case "Amarillo":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.yellow));
-                break;
-            case "Violeta":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.violet));
-                break;
-            case "Rosado":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.rose));
-                break;
-            case "Celeste":
-                resultadoBuffer.setBackgroundColor(getColor(R.color.cian));
-                break;
-        }
-
+        pintarTV(resultadoFibra,fiberColor);
+        pintarTV(resultadoBuffer,bufferColor);
 
         resultadoFibra.setText(colorFiber);
         resultadoBuffer.setText(colorBuffer);
 
         } else resultadoFibra.setText(message);
+    }
+
+    public void pintarTV (TextView tv, String color){
+
+        switch (color){
+            case "Azul":
+                tv.setBackgroundColor(getColor(R.color.blue));
+                tv.setTextColor(getColor(R.color.white));
+                break;
+            case "Naranja":
+                tv.setBackgroundColor(getColor(R.color.orange));
+                break;
+            case "Verde":
+                tv.setBackgroundColor(getColor(R.color.green));
+                tv.setTextColor(getColor(R.color.white));
+                break;
+            case "Café":
+                tv.setBackgroundColor(getColor(R.color.brown));
+                tv.setTextColor(getColor(R.color.white));
+                break;
+            case "Gris":
+                tv.setBackgroundColor(getColor(R.color.grey));
+                break;
+            case "Blanco":
+                tv.setBackgroundColor(getColor(R.color.white));
+                break;
+            case "Rojo":
+                tv.setBackgroundColor(getColor(R.color.red));
+                break;
+            case "Negro":
+                tv.setBackgroundColor(getColor(R.color.black));
+                tv.setTextColor(getColor(R.color.white));
+                break;
+            case "Amarillo":
+                tv.setBackgroundColor(getColor(R.color.yellow));
+                break;
+            case "Violeta":
+                tv.setBackgroundColor(getColor(R.color.violet));
+                break;
+            case "Rosado":
+                tv.setBackgroundColor(getColor(R.color.rose));
+                break;
+            case "Celeste":
+                tv.setBackgroundColor(getColor(R.color.cian));
+                break;
+        }
     }
 }

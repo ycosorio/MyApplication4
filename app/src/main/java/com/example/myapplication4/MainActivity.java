@@ -1,7 +1,6 @@
 package com.example.myapplication4;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,12 +8,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
     int ctaB, ctaI, tamano;
     String mensaje = "";
+
+
+
     public static final String EXTRA_MESSAGE = "com.example.myapplication4.MESSAGE";
 
     @Override
@@ -22,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText campoMensaje = (EditText) findViewById(R.id.tamanoCable);
+
+        EditText campoMensaje = findViewById(R.id.tamanoCable);
         campoMensaje.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -33,8 +39,10 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
+
+
             public void afterTextChanged(Editable s) {
-                TextView contador = (TextView) findViewById(R.id.texto_contador);
+                TextView contador = findViewById(R.id.texto_contador);
                 String tamanoString = String.valueOf(s.length());
                 contador.setText(tamanoString);
             }
@@ -126,4 +134,17 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
             }
         }
-    }}
+    }
+
+
+    public void abrirMapa(View view){
+
+
+        Intent intent = new Intent(this, ActivityGPS.class);
+        startActivity(intent);
+
+
+    }
+
+
+}

@@ -12,6 +12,8 @@
     <color name="violet">#FFBB86FC</color>
     <color name="rose">#F1A9E8</color>
     <color name="cian">#1FFFFF</color>
-    <color name="background">#AFE7FF</color>
+    <color name="background">#051E29</color>
+    <color name="text">#FFFFFFFF</color>
+    <color name="editText">#FABD09</color>
 
 </resources>
